@@ -1,0 +1,19 @@
+{
+  "name": "ucsfcat-sils",
+  "version": "1.0.0",
+  "description": "Give it a ucsfcat link, get a SILS link back",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  },
+  "scripts": {
+    "lint-fix": "standard --fix",
+    "test": "standard",
+    "start": "node server.js"
+  },
+  "author": "Rich Trott <rtrott@gmail.com>",
+  "license": "MIT"
+}
