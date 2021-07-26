@@ -3,7 +3,18 @@
 <title>ucsfcat ➡️ sils</title>
 <meta charset="utf-8">
 
-<form action="/go">
-    <div><label>ucsfcat link</label>:&nbsp;<input name="link"></div>
-    <div><input type="submit"></div>
+<h1>ucsfcat ➡️ SILS</h1>
+
+<form style="margin: 4em 0 3em 0" action="/go">
+    <div><label>ucsfcat link</label>:&nbsp;<input name="link"> <input type="submit"></div>
 </form>
+
+<h2>Features and limitations</h2>
+
+<ul>
+    <li>This takes permalinks from ucsfcat. For example: <code>http://ucsfcat.library.ucsf.edu/record=b1305571~S0</code></li>
+    <li>It accepts <code>http</code> links or <code>https</code> links.</li>
+    <li>You can also just use the identifier (as it appears in the URL, so you might need to remove the final character if you got it from somewhere else). For example: <code>b1305571</code></li>
+    <li>It will work for most/all of our print holdings and locally-licensed resources.</li>
+    <li>Unfortunately, it will <em>not</em> work for most/all shared holdings.</li>
+</ul>
