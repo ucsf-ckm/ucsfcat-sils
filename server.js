@@ -25,7 +25,10 @@ app.get('/go', function (req, res) {
 
   const link = req.query.link.replace(/^https?:\/\/ucsfcat\.library\.ucsf\.edu\/record=(b\d+)~S0$/, '$1')
 
-  const result = linkMap.get(link) || 'Link not found.'
+  const result = linkMap.get(link)
+  if (!result) {
+    return res.send('No result found for link.')
+  }
   const newLink = `https://search.library.ucsf.edu/discovery/fulldisplay?docid=alma${result}&context=U&vid=01UCS_SAF:UCSF&lang=en`
   return res.send(`<a href="${newLink}">${newLink}</a>`)
 })
